@@ -72,7 +72,7 @@
                 </h5>
             </div>
             <div class="header-button-group">
-                <button id="services-btn" class='btn mr-3 px-5 py-2'>OUR SERVICES</button>
+                <button id="services-btn" class='btn mr-3 px-5 py-2' onclick='window.location.href="#contact-us"'>OUR SERVICES</button>
                 <button id="contact-btn" class='btn ml-3 px-5 py-2'>CONTACT US</button>
             </div>
         </div>
@@ -97,7 +97,7 @@
         </div>
     </div>
     <div id="desktop-qualifications">
-        <div class="row d-flex align-items-center">
+        <div class="qual-row row d-flex align-items-center">
             <div class="col">
                 <div class="row d-flex align-items-center">
                     <div class="col">
@@ -141,7 +141,7 @@
             </div>
         </div>
     </div>
-    <div id='mobile-qualifications' class='d-grid text-align-center' style="background-color:white">
+    <!-- <div id='mobile-qualifications' class='d-grid text-align-center' style="background-color:white">
         <div class="row qual-box d-flex align-items-center">
             <div class="col p-0">
                 <img class="w-100" src='../media/award-icon.png '>
@@ -177,7 +177,7 @@
                 </span>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id='services-div' class='row mt-3 d-flex px-3 pb-5'>
         <!-- <div class="row w-100 pl-5 pt-4 d-flex align-items-center" style="font-weight:300; font-size:120%">
             <span style="border-top: 5px solid rgb(255, 190, 69);width: 55px;margin-right: 2%; border-radius: 5px;"></span>
@@ -187,116 +187,77 @@
             <span class="title-bar"></span>
             <div>Services</div>
         </div>
-        <div class='row w-100' style="margin: 3% 10% 0% 10% !important;">
-            <div id='service-card'>
-                <div id='service-tabs' class="col-3">
-                    <div id='welding-service' class="row py-2 pl-1 d-flex align-items-center" style="cursor: pointer;">
-                        <img style="height:50px;" src="../media/welding2.png">
-                        <span style="padding-left:5px;">WELDING</span>
-                    </div>
-                    <div id='consult-service' class="row py-2 pl-1 d-flex align-items-center" style="cursor: pointer;">
-                        <img style="height:50px;" src="../media/welding2.png">
-                        <span style="padding-left:5px;">CONSULTING</span>
-                    </div>
-                    <div id='equip-service' class="row py-2 pl-1 d-flex align-items-center" style="cursor: pointer;">
-                        <img style="height:45px;" src="../media/equipment-repair.png">
-                        <span style="padding-left:5px;">EQUIPMENT REPAIR</span>
-                    </div>
-                    <div id='masonry-service' class="row py-2 pl-1 d-flex align-items-center" style="cursor: pointer;">
-                        <img style="height:50px;" src="../media/masonry.png">
-                        <span style="padding-left:5px;">MASONRY</span>
-                    </div>
 
-                </div>
-                <div id='services-img' class="welding col-5">
-                </div>
-                <div id='services-text' class="welding col-4">
-                    <div class="welding">
-                        <span style="color:#1E1E23">Welding</span>
-                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.
-                        </p>
-                    </div>
-                    <div class="consulting">
-                        <span style="color:#1E1E23">Consulting</span>
-                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.
-                        </p>
-                    </div>
-                    <div class="equipment">
-                        <span style="color:#1E1E23">Equipment Repair</span>
-                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.
-                        </p>
-                    </div>
-                    <div class="masonry">
-                        <span style="color:#1E1E23">Maonsry</span>
-                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.
-                        </p>
-                    </div>
+        <div class="row w-100 mx-auto p-5 d-flex" style="border:1px solid red;">
+            <div class='d-flex'>
+                <div id='service-tabs' class="col-xl-4 col-lg-4 col-12 px-0">
+                    <div class="accordion">
+                        <button id='tab1' type="button" class="accordion__button accordion__button--active">WELDING</button>
+                        <div class="accordion__content">
+                            <p>WELDING Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat
+                                commodo sed. Nisl condimentum.
+                            </p>
 
-                </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button id='tab2' type="button" class="accordion__button">CONSULTING</button>
+                        <div class="accordion__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo
+                                sed. Nisl condimentum.
+                            </p>
 
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button id='tab3' type="button" class="accordion__button">EQUIPMENT REPAIR</button>
+                        <div class="accordion__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo
+                                sed. Nisl condimentum.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button id='tab4' type="button" class="accordion__button">MASONRY</button>
+                        <div class="accordion__content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo
+                                sed. Nisl condimentum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id='card1' class='service-card service-card--active col-xl-8 col-lg-8 px-0 active'>
+                    <div class="col" style="height:300px; background:url('../media/pressure_welding.jpeg'); background-size: cover;"></div>
+                    <div class="col">
+                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
+                    </div>
+                </div>
+                <div id='card2' class='service-card col-xl-8 col-lg-8 px-0'>
+                    <div class="col" style="height:300px; background:url('../media/consulting.jpg'); background-size: cover;">
+                    </div>
+                    <div class="col">
+                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
+                    </div>
+                </div>
+                <div id='card3' class='service-card col-xl-8 col-lg-8 px-0'>
+                    <div class="col" style="height:300px; background:url('../media/equip-repair.jpg'); background-size: cover;">
+                    </div>
+                    <div class="col">
+                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
+                    </div>
+                </div>
+                <div id='card4' class='service-card col-xl-8 col-lg-8 px-0'>
+                    <div class="col" style="height:300px; background:url('../media/masonry.jpg'); background-size: cover;">
+                    </div>
+                    <div class="col">
+                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- <div class="row w-100 d-flex justify-content-center mx-5 pt-3">
-            <div id='welding-service' class="col-xl col-lg-5 col-12 services-img mx-2 mb-3">
-
-            </div>
-            <div id='consult-service' class="col-xl col-lg-5 col-12 services-img mx-2">
-
-            </div>
-            <div id='equip-service' class="col-xl col-lg-5 col-12 services-img mx-2 mt-xl-0 mt-3">
-
-            </div>
-            <div id='masonry-service' class="col-xl col-lg-5 col-12 services-img mx-2 mt-xl-0 mt-3">
-
-            </div>
-        </div> -->
-
     </div>
 
-    </div>
-    <!-- <div id='test' class='container mt-4 d-flex justify-content-center'>
-        <div id='welding-service' class="services-img d-flex">
-            <button id='services-btn-weld' class="services-btn" value="false">
-                <div class="services-icon-img pl-1">
-                    <img id='arrow-1' value='false' style='rotate: 180deg; height:15px; width:auto' src="../media/up-arrow.png">
-                </div>
-                <div class="services-label justify-content-end pr-2">
-                    <div>
-                        <span>GENERAL & PRESSURE WELDING</span>
-                    </div>
-                    <div id="services-dropdown-weld" data-visible="false">
-                        <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore.
-                    </div>
-                </div>
-                
-            </button>
-        </div>
-    </div> -->
-
-    <div id='test' class='container mt-3 d-flex justify-content-center'>
-        <div id='consult-service' class="services-img d-flex">
-            <button class="services-btn">
-                <div class="services-icon-img pl-1">
-                    <img style='rotate: 180deg; height:15px; width:auto' src="../media/up-arrow.png">
-                </div>
-                <div class="services-label d-flex justify-content-end pr-2">
-                    <span>WELDING CONSULTING</span>
-                </div>
-            </button>
-        </div>
-    </div>
-    <div id='test' class='container mt-3 d-flex justify-content-center'>
-        <div id='equip-service' class="services-img d-flex">
-            <button class="services-btn">
-                <div class="services-icon-img pl-1">
-                    <img style='rotate: 180deg; height:15px; width:auto' src="../media/up-arrow.png">
-                </div>
-                <div class="services-label d-flex justify-content-end pr-2">
-                    <span>EQUIPMENT REPAIR</span>
-                </div>
-            </button>
-        </div>
-    </div>
     <div class="row d-flex my-4">
         <div class="col-xl-5 col-lg-4 col-12 col-sm-12 pt-4 d-flex align-items-center" style="padding-left: 96px; padding-right: 48px; font-weight:300; font-size:2.2rem">
             <div class="row d-flex align-items-center">
@@ -359,41 +320,11 @@
             </div>
         </div>
     </div>
-
-
-    <!-- <div class="carousel-mb mt-4">
-        <div class="d-flex align-items-baseline mt-3" style="justify-content: space-between;">
-            <div>
-                <span id='portfolio-title' class="w-100">Work Portfolio</span>
-            </div>
-            <div>
-                <a id='view-more'><b>-</b>View more</a>
-            </div>
-        </div>
-        <div class="track-mb">
-            <div class="card-mb">
-                <img class='carousel-image' src="../media/work1.jpeg">
-            </div>
-            <div class='card-mb'>
-                <img class='carousel-image' src="../media/work2.jpeg">
-            </div>
-            <div class='card-mb'>
-                <img class='carousel-image' src="../media/work3.jpeg">
-            </div>
-            <div class='card-mb'>
-                <img class='carousel-image' src="../media/work4.jpeg">
-            </div>
-            <div class='card-mb'>
-                <img class='carousel-image' src="../media/work5.jpeg">
-            </div>
-        </div>
-    </div> -->
-
     <div class="d-flex mt-5" style="padding: 0 65px;">
-        <div class="col-xl-4 col-lg-4">
+        <div class="d-none d-xl-block d-lg-block col-xl-4 col-lg-4">
             <img class='w-100' src="../media/contact_us4.jpg">
         </div>
-        <div id="contact-us" class="col-xl-8 mt-3" style="height:300px; background:white">
+        <div id="contact-us" class="col-xl-8 col-lg-8 col-12 mt-3" style="height:300px; background:white">
             <div class="row w-100 pt-2 d-flex align-items-center" style="padding-left: 50px; padding-right: 48px; font-weight:300; font-size:2.2rem">
                 <span style="border-top: 5px solid rgb(255, 190, 69);width: 5%;margin-right:2%; border-radius: 5px;"></span>
                 <div>Contact Us</div>
@@ -431,7 +362,7 @@
             Copyright © 2022 Xtra Weld. All Rights Reserved.
         </div>
     </div>
-    <!-- <footer class="mobile-footer d-flex">
+    <footer class="mobile-footer d-flex">
         <div class="container d-flex align-items-end">
             <div class="footer-option">
                 <a href="#">
@@ -450,7 +381,7 @@
             </div>
         </div>
 
-    </footer> -->
+    </footer>
     <script src="../script.js" defer></script>
 </body>
 
