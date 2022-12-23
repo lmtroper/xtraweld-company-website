@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <!-- <meta http-equiv="refresh" content="delay_time; URL=new_website_url" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href='style.css' />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +37,7 @@
                     <a href="#">Work</a>
                 </li>
                 <li class="active">
-                    <a href="#">Contact</a>
+                    <a href="../templates/contact-us.html">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -52,10 +53,10 @@
         <div class="container d-flex justify-content-end">
             <ul id="mobile-navigation" class="mobile-navigation">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="../templates/about-us.html">ABOUT</a></li>
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="../templates/contact-us.html">CONTACT</a></li>
             </ul>
         </div>
     </header>
@@ -77,107 +78,112 @@
             </div>
         </div>
     </div>
-    <div id='about-us-title' class="subheader">
-        <span class="title-bar"></span>
-        <div>About Us</div>
-    </div>
-    <div id="about-us-content">
-        <span id='welcome-title'>
-            <b>Welcome to </b>Xtra Weld</span>
-        <br>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed. Nisl condimentum
-            id venenatis a condimentum vitae sapien pellentesque habitant sit.
-            <p id="about-us-extra">
-                Luctus accumsan tortor it posuere ac ut consequat semper viverra.Nec feugiat nisl pretium fusce idit velit utirum. Elementum integer enim neque enim eu turpis egestas pretium aenea.
-            </p>
-        </p>
-        <div class='learn-more-link'>
-            <a href="#">Learn more...</a>
+    <div class="row my-5 mx-5">
+        <div class="col d-none d-lg-block d-xl-block">
+            <img class='w-100' src="../media/contact_us4.jpg">
         </div>
-    </div>
-    <div id="desktop-qualifications">
-        <div class="qual-row row d-flex align-items-center">
-            <div class="col">
-                <div class="row d-flex align-items-center">
-                    <div class="col">
-                        <img class="w-100" src='../media/award-icon.png '>
-                    </div>
-                    <div class="col pl-0">
-                        <span style='font-size:200%; font-weight:700;'>
-                            30
-                            <span style='color:rgb(246,185,68); '>+</span>
-                        </span>
-                        <br>
-                        <span style='font-weight:500;'>
-                        YEARS OF EXPERIENCE
-                        </span>
-                    </div>
-                </div>
+        <div id='about-us-div' class="col">
+            <div id='about-us-title' class="subheader">
+                <span class="title-bar"></span>
+                <div>About Us</div>
             </div>
-            <div class="col">
-                <div class="row d-flex align-items-center">
-                    <div class="col">
-                        <img class="w-100" src='../media/project-icon.png'>
-                    </div>
-                    <div class="col pl-0">
-                        <span style='font-size:130%; font-weight:700;'>
-                            CUSTOM PROJECTS
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row d-flex align-items-center">
-                    <div class="col">
-                        <img class="w-100" src='../media/money-icon.png'>
-                    </div>
-                    <div class="col pl-0">
-                        <span style='font-size:130%;font-weight:700;'>
-                            COMPETITIVE PRICING
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div id='mobile-qualifications' class='d-grid text-align-center' style="background-color:white">
-        <div class="row qual-box d-flex align-items-center">
-            <div class="col p-0">
-                <img class="w-100" src='../media/award-icon.png '>
-            </div>
-            <div class="col p-0">
-                <span style='font-size:200%;color:black;font-weight:700;'>
-                    30
-                    <span style='color:rgb(246,185,68); '>+</span>
-                </span>
+            <div id="about-us-content">
+                <span id='welcome-title'>
+                    <b>Welcome to </b>Xtra Weld</span>
                 <br>
-                <span style='font-weight:500; '>
-                YEARS OF EXPERIENCE
-                </span>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed. Nisl condimentum
+                    id venenatis a condimentum vitae sapien pellentesque habitant sit.
+                </p>
+
+            </div>
+            <div id='about-us-title' class="d-grid subheader">
+                <div class="pb-1"><b>Why Choose Us?</b></div>
+                <span style="border-top: 2px solid rgb(255, 190, 69)"></span>
+                <div class="pb-2 pt-4">
+                    <img class="checkmark" src="../media/checkmark.png">
+                    <span>30+ years of welding experience</span>
+                </div>
+                <div class="py-2">
+                    <img class="checkmark" src="../media/checkmark.png">
+                    <span>Licensed welding services</span>
+                </div>
+                <div class="py-2">
+                    <img class="checkmark" src="../media/checkmark.png">
+                    <span>Custom Projects</span>
+                </div>
+                <div class="py-2">
+                    <img class="checkmark" src="../media/checkmark.png">
+                    <span>Competitively priced services</span>
+                </div>
             </div>
         </div>
-        <div class="row qual-box d-flex align-items-center">
-            <div class="col p-0">
-                <img style='width:100%' src='../media/project-icon.png'>
+    </div>
+    <div class='pt-5 pb-5' style="color:#1E1E23; background-color:rgba(30,30,35,.075)">
+        <div class="row d-flex px-5" style="justify-content:space-evenly;">
+
+            <div class="col-xl-5 col-lg-4 col-12 col-sm-12 pt-4 d-flex align-items-center" style="font-weight:300; font-size:2.2rem">
+                <div class="row d-flex align-items-center">
+                    <span style="border-top: 5px solid rgb(255, 190, 69);width: 55px;margin-right:2%; border-radius: 5px;"></span>
+
+                    <span>Professional Certifications</span>
+                    <p style="padding-top:30px; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
+
+                </div>
+
             </div>
-            <div class="col p-0">
-                <span style='font-size:130%;color:black;font-weight:700;'>
-                    CUSTOM PROJECTS
-                </span>
+            <div class="cert-card col-xl-3 col-lg-3 col-7 d-grid " style="background-color:white; box-shadow: -6px 6px 23px -4px rgb(0 0 0 / 28%);">
+                <div class="row pt-4 d-flex justify-content-center">
+                    <img class='certification' src="../media/TSSA-logo.png">
+                </div>
+                <div class="row pt-3 d-flex justify-content-center" style="text-align:center">
+                    Technical Standards & Safety Authority
+                </div>
+                <div class="pt-3">
+                    <ul>
+                        <li>
+                            Branch #1
+                        </li>
+                        <li>
+                            Branch #2
+                        </li>
+                        <li>
+                            Branch #3
+                        </li>
+                    </ul>
+                </div>
+                <div class="learn-more-link pb-3">
+                    <a href="">Learn more...</a>
+                </div>
             </div>
+            <div class="col-xl-3 col-lg-3 col-7 d-grid" style="background-color:white;box-shadow: -6px 6px 23px -4px rgb(0 0 0 / 28%);">
+                <div class="row pt-4 d-flex justify-content-center">
+                    <img class='certification' src="../media/cwb-logo.png">
+                </div>
+                <div class="row pt-3 d-flex justify-content-center">
+                    Canadian Welding Bureau
+                </div>
+                <div class="pt-3">
+                    <ul>
+                        <li>
+                            Branch #1
+                        </li>
+                        <li>
+                            Branch #2
+                        </li>
+                        <li>
+                            Branch #3
+                        </li>
+                    </ul>
+                </div>
+                <div class="learn-more-link pb-3">
+                    <a href="">Learn more...</a>
+                </div>
+            </div>
+
         </div>
-        <div class="row qual-box d-flex align-items-center">
-            <div class="col p-0">
-                <img style='width:100%' src='../media/money-icon.png'>
-            </div>
-            <div class="col p-0">
-                <span style='font-size:130%;color:black;font-weight:700;'>
-                    COMPETITIVE PRICING
-                </span>
-            </div>
-        </div>
-    </div> -->
+    </div>
+
     <div id='services-div' class='row mt-3 d-flex px-3 pb-5'>
         <!-- <div class="row w-100 pl-5 pt-4 d-flex align-items-center" style="font-weight:300; font-size:120%">
             <span style="border-top: 5px solid rgb(255, 190, 69);width: 55px;margin-right: 2%; border-radius: 5px;"></span>
@@ -189,7 +195,7 @@
         </div>
 
         <div class="row w-100 mx-auto p-5 d-flex" style="border:1px solid red;">
-            <div class='d-flex'>
+            <div class='d-flex' style="box-shadow: -4px 17px 23px -4px rgb(0 0 0 / 28%)">
                 <div id='service-tabs' class="col-xl-4 col-lg-4 col-12 px-0">
                     <div class="accordion">
                         <button id='tab1' type="button" class="accordion__button accordion__button--active">WELDING</button>
@@ -230,159 +236,170 @@
                 <div id='card1' class='service-card service-card--active col-xl-8 col-lg-8 px-0 active'>
                     <div class="col" style="height:300px; background:url('../media/pressure_welding.jpeg'); background-size: cover;"></div>
                     <div class="col">
-                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
+                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.
+                        </p>
                     </div>
                 </div>
                 <div id='card2' class='service-card col-xl-8 col-lg-8 px-0'>
                     <div class="col" style="height:300px; background:url('../media/consulting.jpg'); background-size: cover;">
                     </div>
                     <div class="col">
-                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
+                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.
+                        </p>
                     </div>
                 </div>
                 <div id='card3' class='service-card col-xl-8 col-lg-8 px-0'>
                     <div class="col" style="height:300px; background:url('../media/equip-repair.jpg'); background-size: cover;">
                     </div>
                     <div class="col">
-                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
+                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.
+                        </p>
                     </div>
                 </div>
                 <div id='card4' class='service-card col-xl-8 col-lg-8 px-0'>
                     <div class="col" style="height:300px; background:url('../media/masonry.jpg'); background-size: cover;">
                     </div>
                     <div class="col">
-                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
+                        <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="row d-flex my-4">
+    <div id='portfolio-header' class="row d-flex my-4">
         <div class="col-xl-5 col-lg-4 col-12 col-sm-12 pt-4 d-flex align-items-center" style="padding-left: 96px; padding-right: 48px; font-weight:300; font-size:2.2rem">
-            <div class="row d-flex align-items-center">
-                <span style="border-top: 5px solid rgb(255, 190, 69);width: 55px;margin-right:2%; border-radius: 5px;"></span>
-                <span>Recent Work</span>
-                <p style="padding-top:30px; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
-                <div class="w-100 d-flex justify-content-center">
-                    <button class="btn mt-1 px-5 py-2" style="background: rgb(255, 190, 69); color:white;">
+            <div class="row d-grid align-items-center">
+                <!-- <span style="border-top: 5px solid rgb(255, 190, 69);width: 55px;margin-right:2%; border-radius: 5px;"></span> -->
+                <span style="color:white; font-size:1.5em;font-family: 'Poppins', sans-serif; " ">Our Work</span>
+                <span style="border-top:6px rgb(246, 181, 19) solid; width:35%; "></span>
+
+                <!-- <div class="w-100 d-flex justify-content-center ">
+                    <button class="btn mt-1 px-5 py-2 " style="background: rgb(255, 190, 69); color:white; ">
                         See Portfolio
                     </button>
-                </div>
+                </div> -->
             </div>
 
         </div>
-        <div class="col-xl-7 col-lg-8 col-12">
-            <div class="carousel-container">
-                <div class="carousel-inner">
-                    <div class="track">
-                        <div class="card-container">
-                            <div class="card">
-                                <img class='img' src="../media/work1.jpeg">
+        <div class="col-xl-7 col-lg-8 col-12 ">
+            <div class="carousel-container ">
+                <div class="carousel-inner ">
+                    <div class="track ">
+                        <div class="card-container ">
+                            <div class="card ">
+                                <img class='img' src="../media/work1.jpeg ">
                             </div>
                         </div>
-                        <div class="card-container">
-                            <div class="card">
-                                <img class='img' src="../media/work2.jpeg">
+                        <div class="card-container ">
+                            <div class="card ">
+                                <img class='img' src="../media/work2.jpeg ">
                             </div>
                         </div>
-                        <div class="card-container" style="margin-right:1px;">
-                            <div class="card">
-                                <img class='img' src="../media/work3.jpeg">
+                        <div class="card-container " style="margin-right:1px; ">
+                            <div class="card ">
+                                <img class='img' src="../media/work3.jpeg ">
                             </div>
                         </div>
-                        <div class="card-container">
-                            <div class="card">
-                                <img class='img' src="../media/work4.jpeg">
+                        <div class="card-container ">
+                            <div class="card ">
+                                <img class='img' src="../media/work4.jpeg ">
                             </div>
                         </div>
-                        <div class="card-container">
-                            <div class="card">
-                                <img class='img' src="../media/work5.jpeg">
+                        <div class="card-container ">
+                            <div class="card ">
+                                <img class='img' src="../media/work5.jpeg ">
                             </div>
                         </div>
-                        <div class="card-container">
-                            <div class="card">
-                                <img class='img' src="../media/work6.jpeg">
+                        <div class="card-container ">
+                            <div class="card ">
+                                <img class='img' src="../media/work6.jpeg ">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="nav">
-                    <button class="prev">
-                        <img src="../media/left-arrow.png">
+                <div class="nav ">
+                    <button class="prev ">
+                        <img src="../media/left-arrow.png ">
                     </button>
-                    <button class="next">
-                        <img src="../media/right-arrow.png">
+                    <button class="next ">
+                        <img src="../media/right-arrow.png ">
                     </button>
 
                 </div>
             </div>
+            <div class="d-flex justify-content-end mr-5 mb-3 ">
+                <span style="color:white; font-family: 'Poppins', sans-serif;letter-spacing: 0.05em; "><img style="height:1.5rem; " src='../media/directory-arrow.png'><a style='color:white' href="../templates/contact-us.html "> See Work Portfolio</a></span>
+
+            </div>
+
         </div>
+
     </div>
-    <div class="d-flex mt-5" style="padding: 0 65px;">
-        <div class="d-none d-xl-block d-lg-block col-xl-4 col-lg-4">
-            <img class='w-100' src="../media/contact_us4.jpg">
+    <!-- <div class="d-flex mt-5 " style="padding: 0 65px; ">
+        <div class="d-none d-xl-block d-lg-block col-xl-4 col-lg-4 ">
+            <img class='w-100' src="../media/contact_us4.jpg ">
         </div>
-        <div id="contact-us" class="col-xl-8 col-lg-8 col-12 mt-3" style="height:300px; background:white">
-            <div class="row w-100 pt-2 d-flex align-items-center" style="padding-left: 50px; padding-right: 48px; font-weight:300; font-size:2.2rem">
-                <span style="border-top: 5px solid rgb(255, 190, 69);width: 5%;margin-right:2%; border-radius: 5px;"></span>
+        <div id="contact-us " class="col-xl-8 col-lg-8 col-12 mt-3 " style="height:300px; background:white ">
+            <div class="row w-100 pt-2 d-flex align-items-center " style="padding-left: 50px; padding-right: 48px; font-weight:300; font-size:2.2rem ">
+                <span style="border-top: 5px solid rgb(255, 190, 69);width: 5%;margin-right:2%; border-radius: 5px; "></span>
                 <div>Contact Us</div>
             </div>
-            <div class=" contact-us d-flex">
+            <div class=" contact-us d-flex ">
                 <div style='display:grid'>
-                    <img class='contact-us-phone' style="padding-left: 6px; padding-bottom: 4pt;" src="../media/phone-icon.png">
-                    <img class='contact-us-email' src="../media/mail-icon.png">
+                    <img class='contact-us-phone' style="padding-left: 6px; padding-bottom: 4pt; " src="../media/phone-icon.png ">
+                    <img class='contact-us-email' src="../media/mail-icon.png ">
                 </div>
                 <div style='display:grid'>
-                    <span style="padding-bottom: 4pt;"><b>Phone:</b> <a id="phone-link" href="#">416-XXX-XXXX</a></span>
-                    <span><b>Email:</b> <a id="email-link" href="#">xtraweld@gmail.com</a></span>
+                    <span style="padding-bottom: 4pt; "><b>Phone:</b> <a id="phone-link " href="# ">416-XXX-XXXX</a></span>
+                    <span><b>Email:</b> <a id="email-link " href="# ">xtraweld@gmail.com</a></span>
                 </div>
             </div>
-            <div class="contact-us pt-4">
+            <div class="contact-us pt-4 ">
                 <span>Or send us a message here:</span>
             </div>
-            <div class="input-group pt-2 pb-3 contact-us">
-                <input class="input mb-2" type="text" placeholder="Your Name">
-                <input class="input mb-2" type="text" placeholder="Your Email">
-                <textarea placeholder="Your Message" cols="40" rows="5"></textarea>
+            <div class="input-group pt-2 pb-3 contact-us ">
+                <input class="input mb-2 " type="text " placeholder="Your Name ">
+                <input class="input mb-2 " type="text " placeholder="Your Email ">
+                <textarea placeholder="Your Message " cols="40 " rows="5 "></textarea>
             </div>
-            <div class="d-flex justify-content-end" style="padding-right:10%">
-                <button id='contact-submit' class="btn">
+            <div class="d-flex justify-content-end " style="padding-right:10% ">
+                <button id='contact-submit' class="btn ">
                 Send Message
             </button>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div style="height:270px; display:none;">
+    <div style="height:270px; display:none; ">
     </div>
-    <div id='web-footer' class="row w-100 mx-auto mt-5 d-flex justify-content-end align-items-center" style='background-color:#1E1E23;'>
+    <div id='web-footer' class="row w-100 mx-auto mt-5 d-flex justify-content-end align-items-center " style='background-color:#1E1E23;'>
         <div class='row py-3 pr-5' style='color:white; font-size:13px'>
             Copyright © 2022 Xtra Weld. All Rights Reserved.
         </div>
     </div>
-    <footer class="mobile-footer d-flex">
-        <div class="container d-flex align-items-end">
-            <div class="footer-option">
-                <a href="#">
+    <footer class="mobile-footer d-flex ">
+        <div class="container d-flex align-items-end ">
+            <div class="footer-option ">
+                <a href="# ">
                     <img class='footer-icon' src='../media/portfolio.png'>Portfolio
                 </a>
             </div>
             <div class="footer-option ">
-                <a href="#">
+                <a href="# ">
                     <img class='footer-icon' src='../media/services.png'>Services
                 </a>
             </div>
-            <div class="footer-option">
-                <a href="#">
+            <div class="footer-option ">
+                <a href="# ">
                     <img class='footer-icon' src='../media/phone2.png'>Contact Us
                 </a>
             </div>
         </div>
 
     </footer>
-    <script src="../script.js" defer></script>
+    <script src="../script.js " defer></script>
 </body>
 
 </html>

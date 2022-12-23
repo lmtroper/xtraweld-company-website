@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    cursor: pointer;
+}
+
 
 /* MOBILE NAVBAR */
 
@@ -364,10 +368,7 @@ body {
     display: flex;
     justify-content: end;
     color: cornflowerblue !important;
-}
-
-.learn-more-link:hover {
-    color: blue !important;
+    font-size: 0.9rem !important;
 }
 
 #services-btn {
@@ -391,7 +392,7 @@ body {
 
 #services-div {
     /* background-color: #1E1E23; */
-    /* background: linear-gradient( to bottom, #1E1E23 0%, #1E1E23 65%, white 65%, white 100%); */
+    background: linear-gradient( to bottom, #1E1E23 0%, #1E1E23 65%, white 65%, white 100%);
     color: #1E1E23;
     display: flex;
     min-height: 75px;
@@ -589,7 +590,7 @@ input {
 .carousel-container {
     /* width: 778px; */
     width: 95%;
-    margin: 50px auto;
+    margin: 50px auto 20px auto;
     min-height: 200px;
     position: relative;
 }
@@ -746,7 +747,7 @@ input {
     width: 10px;
     height: 100%;
     background: orange;
-    box-shadow: -6px 6px 23px -4px rgb(0 0 0 / 28%);
+    box-shadow: -4px 17px 23px -4px rgb(0 0 0 / 28%);
     /* box-shadow: -6px 0px 13px -4px black; */
 }
 
@@ -760,9 +761,11 @@ input {
 .subheader {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    margin: 4% 4% 0 4%;
 }
 
 .title-bar {
@@ -825,7 +828,7 @@ ul.service-tabs-test li.active {
 .accordion__button {
     display: block;
     width: 100%;
-    padding: 22.2px;
+    padding: 22.1px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -836,7 +839,8 @@ ul.service-tabs-test li.active {
 }
 
 .accordion__button--active {
-    background: #555555;
+    /* background: #555555; */
+    background: rgb(255, 190, 69);
 }
 
 .accordion__content {
@@ -849,6 +853,7 @@ ul.service-tabs-test li.active {
 
 .service-card {
     display: none;
+    background: white;
 }
 
 .accordion__button:focus {
@@ -876,4 +881,106 @@ ul.service-tabs-test li.active {
     .accordion__button--active::after {
         content: '\25b4';
     }
+}
+
+.contact-us-img {
+    height: 5rem;
+}
+
+.contact-info-tab {
+    display: flex;
+}
+
+@media only screen and (max-width:576px) {
+    .contact-info-tab {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+    .contact-address {
+        padding: 20px 0;
+    }
+}
+
+.contact-us-header {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    background-size: cover;
+    background-position: bottom -25% right 100%;
+    /* background-color: rgba(30, 30, 35, .6); */
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, rgba(30, 30, 35, 0.4), rgba(0, 0, 0, 1)), url('../media/header.jpg');
+}
+
+.d-grid {
+    display: grid;
+}
+
+label.required:after {
+    content: '*';
+    color: #E74C3C;
+    margin-left: 0.3125rem;
+}
+
+label.is-active {
+    /* color: rgb(246, 181, 19); */
+}
+
+label {
+    font-weight: 500;
+}
+
+.about-us-header {
+    display: flex;
+    align-items: center;
+    /* height: 300px; */
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, rgba(30, 30, 35, 0.4), rgba(0, 0, 0, 1)), url('../media/weld-bg.jpeg');
+    background-position: bottom 0 right 100%;
+}
+
+img.checkmark {
+    width: 1.45rem;
+    margin-right: 10px;
+}
+
+img.certification {
+    height: 10rem;
+}
+
+@media only screen and (min-width:992px) {
+    .cert-card {
+        margin: 0 !important;
+    }
+    .about-us-div {
+        margin-right: 48px !important;
+    }
+}
+
+.cert-card {
+    margin: 20px 0 20px 0;
+}
+
+.about-us-div {
+    margin: 0;
+    padding: 0 !important;
+}
+
+#portfolio-header {
+    display: flex;
+    align-items: center;
+    /* height: 300px; */
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, rgba(30, 30, 35, 0.4), rgba(0, 0, 0, 1)), url('../media/weld-bg.jpeg');
+    background-position: bottom 0 right 100%;
 }
