@@ -20,18 +20,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3%;
-    position: fixed;
+    padding: 2% 3%;
+    position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
     gap: var(--gap, 1rem);
-    background-color: #f9f9f9;
-    box-shadow: 0px 0px 20px 5px #888888;
+    background-color: white;
 }
 
 .mobile-logo {
-    width: 200px;
+    width: 250px;
 }
 
 .mobile-navigation {
@@ -80,15 +79,24 @@ a {
         position: sticky;
         top: 0px;
         z-index: 1;
-        background: rgb(255, 190, 69);
-        padding: 30px;
+        /* background: rgb(255, 190, 69); */
+        background: white;
+        padding: 15px;
+    }
+    .contact-info-header {
+        display: block !important;
     }
     .primary-navbar a {
         padding: 0 24px;
-        color: white;
+        /* color: white; */
+        color: #1E1E23;
         font-weight: 500;
         letter-spacing: 0.015em;
     }
+}
+
+.contact-info-header {
+    display: none;
 }
 
 
@@ -97,7 +105,8 @@ a {
 .header-background {
     /* background-image: url('../media/header.jpg'); */
     background-image: url('../media/background.jpg');
-    opacity: 0.8;
+    background-image: linear-gradient(to left, rgba(30, 30, 35, 0.2), rgba(0, 0, 0, 0.8)), url('../media/background.jpg');
+    /* opacity: 0.8; */
     height: 50vh;
     width: 100vw;
     background-position: center;
@@ -169,7 +178,7 @@ a {
 
 @media only screen and (min-width:320px) {
     .header-background {
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     #about-us-extra {
         display: none;
@@ -181,7 +190,7 @@ a {
 
 @media only screen and (min-width:481px) and (max-width: 768px) {
     .header-background {
-        margin-top: 80px;
+        /* margin-top: 80px; */
     }
 }
 
@@ -297,7 +306,7 @@ a {
         inset: 0 0 0 35%;
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
-        background: #f9f9f9;
+        background: white;
         z-index: 1000;
         transform: translateX(100%);
         transition: transform 250ms ease-out;
@@ -311,7 +320,7 @@ a {
         z-index: 9999;
         width: 3rem;
         border: 0;
-        background-color: #f9f9f9;
+        background-color: white;
         aspect-ratio: 1;
         right: 2rem;
     }
@@ -330,9 +339,9 @@ a {
     .mobile-navigation a>[aria-hidden] {
         display: none;
     }
-    .mobile-header {
+    /* .mobile-header {
         display: none;
-    }
+    } */
 }
 
 #mobile-qualifications {
@@ -512,7 +521,7 @@ align-items: baseline;
 }
 
 .contact-us {
-    padding-left: 5%;
+    margin-left: 5%;
     padding-top: 2%;
 }
 
@@ -524,10 +533,6 @@ align-items: baseline;
 .contact-us-email {
     height: 21px;
     padding-right: 7px;
-}
-
-.form-control {
-    width: 80%
 }
 
 .input-form {
@@ -761,7 +766,6 @@ input {
 .subheader {
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 100%;
     font-weight: 300;
     font-size: 1.2rem;
@@ -983,4 +987,24 @@ img.certification {
     background-repeat: no-repeat;
     background-image: linear-gradient(to left, rgba(30, 30, 35, 0.4), rgba(0, 0, 0, 1)), url('../media/weld-bg.jpeg');
     background-position: bottom 0 right 100%;
+}
+
+@media (min-width: 1000px) {
+    .nav-toggle {
+        display: none !important;
+    }
+    .navbar-links {
+        display: block !important;
+    }
+}
+
+.nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 3rem;
+    border: 0;
+    background-color: white;
+    aspect-ratio: 1;
+    right: 2rem;
 }
