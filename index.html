@@ -19,13 +19,13 @@
     <!-- Header displaying phone number and email -->
     <div id='contact-page-header'>
         <div class="phone">
-            <a>
+            <a style="text-decoration:none; color:white;">
                 <img src="media/phone-icon.png">
                 <span>416-XXX-XXXX</span>
             </a>
         </div>
         <div class="email">
-            <a>
+            <a href="mailto:xtraweld@gmail.com" style="text-decoration:none; color:white;">
                 <img src="media/mail-icon.png">
                 <span>xtraweld@gmail.com</span>
             </a>
@@ -79,8 +79,12 @@
                 </h5>
             </div>
             <div class="header-button-group">
-                <button id="services-btn" class='btn mr-3 px-5 py-2' onclick='window.location.href="#services-anchor"'>OUR SERVICES</button>
-                <button id="contact-btn" class='btn ml-3 px-5 py-2' onclick='window.location.href="#contact-anchor"'>CONTACT US</button>
+                <button id="services-btn" class='btn mr-3 px-5 py-2' onclick='window.location.href="#services-anchor"'>
+                    <span>OUR SERVICES</span>
+                </button>
+                <button id="contact-btn" class='btn ml-3 px-5 py-2' onclick='window.location.href="#contact-anchor"'>
+                    <span>CONTACT US</span>
+                </button>
             </div>
             <a id="about-us-anchor"></a>
         </div>
@@ -347,13 +351,13 @@
     <!-- Contact Information Section -->
     <div class='row w-100 mx-auto' style="padding:2rem 4rem; background-color: rgba(30,30,35,.075); ">
         <div class="row w-100 d-flex align-items-center justify-content-between ">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 d-flex ">
+            <div class="contact-info-tab col-xl-4 col-lg-4 col-md-4 col-sm-6 d-flex ">
                 <div class="col-6 d-flex justify-content-end ">
                     <img class='contact-us-img' src="media/contact-us-phone.png ">
                 </div>
                 <div class="col-6 d-flex align-items-center ">
                     <span>
-                        <b>Phone:</b><br><a>416-XXX-XXXX</a>
+                        <b>Phone:</b><br><a href="" style="text-decoration:none; color:#1E1E23;">416-XXX-XXXX</a>
                     </span>
                 </div>
             </div>
@@ -362,8 +366,10 @@
                     <img class='contact-us-img' src="media/contact-us-email.png ">
                 </div>
                 <div class="col-6 d-flex align-items-center ">
-                    <span>
-                        <b>Email:</b><br><a>xtraweld@gmail.com</a>
+                    <span class="email">
+                        <b>Email:</b>
+                        <br>
+                        <a href="mailto:xtraweld@gmail.com" style="text-decoration:none; color:#1E1E23">xtraweld@gmail.com</a>
                     </span>
                 </div>
 
@@ -417,7 +423,9 @@
                         <label class="required " for="message-input ">Message</label>
                         <textarea class="form-control " id="message-input " rows="5 " placeholder='How can we help you? ' required></textarea>
                     </div>
-                    <button type="submit " class="btn btn-primary " onclick="sendEmail() " style="background-color:rgb(246, 181, 19)!important; border:white; ">Send Message</button>
+                    <button id='submit-btn' type="submit " class="btn btn-primary " onclick="sendEmail() " style="background-color:rgb(246, 181, 19)!important; border:white; ">
+                        <span>Send Message</span>
+                    </button>
                 </form>
             </div>
         </div>

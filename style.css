@@ -38,6 +38,10 @@ a {
     padding-right: 8px;
 }
 
+.contact-info-tab span a:hover {
+    color: grey !important;
+}
+
 @media only screen and (max-width: 481px) {
     #contact-page-header span {
         display: none;
@@ -97,6 +101,10 @@ a {
 
 .navigation-links li {
     padding: 0 10px;
+}
+
+.navigation-links li a:hover {
+    color: rgb(246, 181, 19) !important;
 }
 
 
@@ -201,6 +209,45 @@ a {
     #welcome-title {
         font-size: 40px !important;
     }
+}
+
+#contact-btn,
+#services-btn,
+#submit-btn {
+    transition: all 0.5s;
+}
+
+#contact-btn span,
+#services-btn span,
+#submit-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#contact-btn span:after,
+#services-btn span:after,
+#submit-btn span:after {
+    content: '\276F';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#contact-btn:hover span,
+#services-btn:hover span,
+#submit-btn:hover span {
+    padding-right: 25px;
+}
+
+#contact-btn:hover span:after,
+#services-btn:hover span:after,
+#submit-btn:hover span::after {
+    opacity: 1;
+    right: 0;
 }
 
 .footer-option {
