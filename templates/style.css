@@ -273,6 +273,9 @@ a {
         display: flex;
         align-items: end;
     }
+    .carousel-container .card {
+        height: 250px !important;
+    }
 }
 
 
@@ -307,13 +310,13 @@ a {
         aspect-ratio: 1;
         right: 2rem;
     }
-    .mobile-nav-toggle[aria-expanded="true"] .bar:nth-child(2) {
+    .mobile-nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(2) {
         opacity: 0;
     }
-    .mobile-nav-toggle[aria-expanded="true"] .bar:nth-child(1) {
+    .mobile-nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .mobile-nav-toggle[aria-expanded="true"] .bar:nth-child(3) {
+    .mobile-nav-toggle[aria-expanded="true"] .hamburger-bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
@@ -322,9 +325,6 @@ a {
     .mobile-navigation a>[aria-hidden] {
         display: none;
     }
-    /* .mobile-header {
-        display: none;
-    } */
 }
 
 #mobile-qualifications {
@@ -332,14 +332,6 @@ a {
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-.qual-box {
-    border: 1.5px #1E1E23 solid;
-    margin: 5% 15%;
-    padding: 8% 2%;
-    border: 2px #1E1E23 solid;
-    border-radius: 15px;
 }
 
 #about-us-content {
@@ -397,36 +389,6 @@ a {
 #services-div span {
     color: white;
 }
-
-#welding-service {
-    background-color: #3b3b45
-}
-
-#consult-service {
-    background-color: #1E1E23;
-}
-
-#equip-service {
-    background-color: #1E1E23;
-}
-
-#masonry-service {
-    background-color: #1E1E23;
-}
-
-
-/* .services-img {
-    height: 38vh;
-    width: 100%;
-    /* background-size: contain; */
-
-
-/* background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-align-items: baseline;
-
-} */
 
 .services-label {
     width: 100%;
@@ -595,17 +557,16 @@ input {
 .carousel-container .card-container {
     width: 259px;
     flex-shrink: 0;
-    height: 250px;
+    height: 250px !important;
     padding-right: 15px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .carousel-container .card-container .card {
     width: 100%;
     height: 100%;
     border: 0;
-    /* border: 1px solid #ccc; */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -613,6 +574,7 @@ input {
 
 .carousel-container .card-container .img {
     border-radius: 10px;
+    max-height: 250px !important;
 }
 
 .nav button {
@@ -669,30 +631,6 @@ input {
     background-size: cover;
     width: 100%;
     /* background-image: url('../media/pressure_welding.jpeg'); */
-}
-
-#welding-service,
-#consult-service,
-#equip-service,
-#masonry-service span {
-    /* color: rgb(255, 190, 69); */
-    padding-left: 5px;
-}
-
-#services-img.welding {
-    background-image: url('../media/pressure_welding.jpeg');
-}
-
-#services-img.consult {
-    background-image: url('../media/consulting.jpg');
-}
-
-#services-img.equip {
-    background-image: url('../media/equip-repair.jpg');
-}
-
-#services-img.masonry {
-    background-image: url('../media/masonry.jpg');
 }
 
 #services-text {
