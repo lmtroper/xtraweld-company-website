@@ -158,6 +158,9 @@ a {
     .footer-option {
         display: none !important;
     }
+    #about-us {
+        margin: 48px 10px !important;
+    }
 }
 
 #mobile-header-title {
