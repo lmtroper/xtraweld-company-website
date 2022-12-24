@@ -219,6 +219,13 @@ a {
     padding: 2px;
 }
 
+.web-footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #1E1E23;
+}
+
 @media only screen and (max-width: 481px) {
     .mobile-footer {
         display: flex !important;
@@ -236,8 +243,14 @@ a {
         display: flex;
         align-items: end;
     }
+    .web-footer {
+        display: none !important;
+    }
     .carousel-container .card {
         height: 250px !important;
+    }
+    .contact-us-div {
+        margin-bottom: 6rem !important;
     }
 }
 
