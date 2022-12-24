@@ -12,29 +12,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@200;300;400;600&family=Roboto+Condensed:wght@300;400;700&family=Roboto+Slab:wght@500&display=swap"
         rel="stylesheet">
     <title>XTRA WELD</title>
-    <link rel="shortcut icon" type="image/png" href="../media/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/media/favicon.png" />
 </head>
 
-<body class="w-100 mx-auto">
-    <div class="container-fluid w-100 mx-auto d-flex justify-content-end align-items-center" style="background: #1E1E23; color:white; height:50px;">
-        <div class="header-phone-number mx-3">
-            <img class='my-2 pl-3 pr-2' style='height:25px;' src="../media/phone-icon.png"><span class="header-phone-number">416-XXX-XXXX</span>
+<body>
+    <!-- Header displaying phone number and email -->
+    <div id='contact-page-header'>
+        <div class="phone">
+            <a>
+                <img src="media/phone-icon.png">
+                <span>416-XXX-XXXX</span>
+            </a>
         </div>
-        <div class="header-email mx-3">
-            <img class='my-2 pl-3 pr-2' style='height:25px;' src="../media/mail-icon.png"> <span>xtraweld@gmail.com</span>
+        <div class="email">
+            <a>
+                <img src="media/mail-icon.png">
+                <span>xtraweld@gmail.com</span>
+            </a>
         </div>
     </div>
-    <header class="mobile-header">
+
+    <!-- Navbar -->
+    <header class="navigation-bar">
         <div>
-            <img class='mobile-logo' src="../media/full_logo_nb.png">
+            <a href="#">
+                <img class='logo' src="media/full_logo_nb.png">
+            </a>
         </div>
-        <button class='mobile-nav-toggle' aria-expanded="false">
+        <button class='nav-toggle' aria-expanded="false">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
         </button>
         <nav>
-            <ul id="mobile-navigation" class="mobile-navigation" data-visible="false">
+            <ul id="navigation-links" class="navigation-links" data-visible="false">
                 <li class="active">
                     <a href="#">Home</a>
                 </li>
@@ -53,6 +64,8 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Parallax Background -->
     <div class="header-background">
         <span id="mobile-header-title"></span>
         <div class="primary-header-title">
@@ -72,10 +85,11 @@
             <a id="about-us-anchor"></a>
         </div>
     </div>
-    <a id="about-us-anchor"></a>
+
+    <!-- About Us Section -->
     <div class="row my-5 mx-5">
         <div class="col d-none d-lg-block d-xl-block">
-            <img class='w-100' src="../media/contact_us4.jpg">
+            <img class='w-100' src="media/contact_us4.jpg">
         </div>
         <div id='about-us-div' class="col">
             <div id='about-us-title' class="subheader">
@@ -96,24 +110,25 @@
                 <div class="pb-1"><b>Why Choose Us?</b></div>
                 <span style="border-top: 2px solid rgb(255, 190, 69)"></span>
                 <div class="pb-2 pt-4">
-                    <img class="checkmark" src="../media/checkmark.png">
+                    <img class="checkmark" src="media/checkmark.png">
                     <span>30+ years of welding experience</span>
                 </div>
                 <div class="py-2">
-                    <img class="checkmark" src="../media/checkmark.png">
+                    <img class="checkmark" src="media/checkmark.png">
                     <span>Licensed welding services</span>
                 </div>
                 <div class="py-2">
-                    <img class="checkmark" src="../media/checkmark.png">
+                    <img class="checkmark" src="media/checkmark.png">
                     <span>Custom Projects</span>
                 </div>
                 <div class="py-2">
-                    <img class="checkmark" src="../media/checkmark.png">
+                    <img class="checkmark" src="media/checkmark.png">
                     <span>Competitively priced services</span>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Professional Certifications -->
     <div class='pt-5 pb-5' style="color:#1E1E23; background-color:rgba(30,30,35,.075)">
         <div class="row d-flex mx-5" style="justify-content:space-evenly;">
             <div class="col-xl-5 col-lg-4 col-12 col-sm-12 pt-4 d-flex align-items-center" style="font-weight:300; font-size:2.2rem">
@@ -129,7 +144,7 @@
             </div>
             <div class="cert-card col-xl-3 col-lg-3 col-md-7 col-sm-8 col-10 d-grid " style="background-color:white; box-shadow: -6px 6px 23px -4px rgb(0 0 0 / 28%);">
                 <div class="row pt-4 d-flex justify-content-center">
-                    <img class='certification' src="../media/TSSA-logo.png">
+                    <img class='certification' src="media/TSSA-logo.png">
                 </div>
                 <div class="row pt-3 px-2 d-flex justify-content-center" style="text-align:center">
                     Technical Standards & Safety Authority
@@ -148,12 +163,12 @@
                     </ul>
                 </div>
                 <div class="learn-more-link pb-3">
-                    <a href="">Learn more...</a>
+                    <a href="https://www.tssa.org/en/about-tssa/about-tssa.aspx" target="_blank">Learn more...</a>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-7 col-sm-8 col-10 d-grid" style="background-color:white;box-shadow: -6px 6px 23px -4px rgb(0 0 0 / 28%);">
                 <div class="row pt-4 d-flex justify-content-center">
-                    <img class='certification' src="../media/cwb-logo.png">
+                    <img class='certification' src="media/cwb-logo.png">
                 </div>
                 <div class="row pt-3 d-flex justify-content-center">
                     Canadian Welding Bureau
@@ -173,12 +188,13 @@
                 </div>
                 <a id="services-anchor"></a>
                 <div class="learn-more-link pb-3">
-                    <a href="">Learn more...</a>
+                    <a href="https://www.cwbgroup.org/about" target="_blank">Learn more...</a>
                 </div>
             </div>
 
         </div>
     </div>
+    <!-- Services Section -->
     <div id='services-div' class='row w-100 mx-auto d-flex pt-3 pb-5' style="background-color:#1E1E23">
         <div class='subheader' style="display:grid!important">
             <div class='d-flex justify-content-center' style="color:white; margin: 4;font-size:2rem!important;">Offered Services</div>
@@ -190,7 +206,7 @@
             <div class='d-flex' style="box-shadow: -4px 17px 23px -4px rgb(0 0 0 / 28%)">
                 <div id='service-tabs' class="col-xl-4 col-lg-4 col-12 px-0">
                     <div class="accordion">
-                        <button id='tab1' type="button" class="accordion__button accordion__button--active">WELDING</button>
+                        <button id='tab1' type="button" class="accordion__button accordion__button--active"><img style="height:4rem;padding-right:10px;" src="media/welding2.png">WELDING</button>
                         <div class="accordion__content">
                             <p>WELDING<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat
                                 commodo sed. Nisl condimentum.
@@ -208,7 +224,7 @@
                         </div>
                     </div>
                     <div class="accordion">
-                        <button id='tab3' type="button" class="accordion__button">EQUIPMENT REPAIR</button>
+                        <button id='tab3' type="button" class="accordion__button"><img style='height:2.5rem;'src="media/equip_repair_icon.png">EQUIPMENT REPAIR</button>
                         <div class="accordion__content">
                             <p>EQUIPMENT REPAIR<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam
                                 volutpat commodo sed. Nisl condimentum.
@@ -226,7 +242,7 @@
                     </div>
                 </div>
                 <div id='card1' class='service-card service-card--active col-xl-8 col-lg-8 px-0 active' style="background:white;">
-                    <div class="col" style="height:300px; background:url('../media/pressure_welding.jpeg'); background-size: cover;"></div>
+                    <div class="col" style="height:300px; background:url('media/pressure_welding.jpeg'); background-size: cover;"></div>
                     <div class="col">
                         <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">WELDING<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat
                             commodo sed.
@@ -234,7 +250,7 @@
                     </div>
                 </div>
                 <div id='card2' class='service-card col-xl-8 col-lg-8 px-0'>
-                    <div class="col" style="height:300px; background:url('../media/consulting.jpg'); background-size: cover;">
+                    <div class="col" style="height:300px; background:url('media/consulting.jpg'); background-size: cover;">
                     </div>
                     <div class="col">
                         <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">CONSULTING<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat
@@ -243,7 +259,7 @@
                     </div>
                 </div>
                 <div id='card3' class='service-card col-xl-8 col-lg-8 px-0'>
-                    <div class="col" style="height:300px; background:url('../media/equip-repair.jpg'); background-size: cover;">
+                    <div class="col" style="height:300px; background:url('media/equip-repair.jpg'); background-size: cover;">
                     </div>
                     <div class="col">
                         <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">EQUIPMENT REPAIR<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam
@@ -252,7 +268,7 @@
                     </div>
                 </div>
                 <div id='card4' class='service-card col-xl-8 col-lg-8 px-0'>
-                    <div class="col" style="height:300px; background:url('../media/masonry.jpg'); background-size: cover;">
+                    <div class="col" style="height:300px; background:url('media/masonry.jpg'); background-size: cover;">
                     </div>
                     <div class="col">
                         <p style="padding: 20px 0; font-size:10.5pt; color:#1E1E23;">MASONRY<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat
@@ -264,6 +280,7 @@
         </div>
         <a id="portfolio-anchor"></a>
     </div>
+    <!-- Portfolio Section -->
     <div id='portfolio-header' class="row w-100 mx-auto d-flex mt-4">
         <div class="col-xl-5 col-lg-4 col-12 col-sm-12 pt-4 d-flex align-items-center" style="padding-left: 96px; padding-right: 48px; font-weight:300; font-size:2.2rem">
             <div class="row d-grid align-items-center">
@@ -277,57 +294,58 @@
                     <div class="track ">
                         <div class="card-container ">
                             <div class="card ">
-                                <img class='img' style="height:250px!important;" src="../media/work1.jpeg ">
+                                <img class='img' style="height:250px!important;" src="media/work1.jpeg ">
                             </div>
                         </div>
                         <div class="card-container ">
                             <div class="card ">
-                                <img class='img' style="height:250px!important;" src="../media/work2.jpeg ">
+                                <img class='img' style="height:250px!important;" src="media/work2.jpeg ">
                             </div>
                         </div>
                         <div class="card-container " style="height:250px!important;" style="margin-right:1px; ">
                             <div class="card ">
-                                <img class='img' style="height:250px!important;" src="../media/work3.jpeg ">
+                                <img class='img' style="height:250px!important;" src="media/work3.jpeg ">
                             </div>
                         </div>
                         <div class="card-container ">
                             <div class="card ">
-                                <img class='img' style="height:250px!important;" src="../media/work4.jpeg ">
+                                <img class='img' style="height:250px!important;" src="media/work4.jpeg ">
                             </div>
                         </div>
                         <div class="card-container ">
                             <div class="card ">
-                                <img class='img' style="height:250px!important;" src="../media/work5.jpeg ">
+                                <img class='img' style="height:250px!important;" src="media/work5.jpeg ">
                             </div>
                         </div>
                         <div class="card-container ">
                             <div class="card ">
-                                <img class='img' style="height:250px!important;" src="../media/work6.jpeg ">
+                                <img class='img' style="height:250px!important;" src="media/work6.jpeg ">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="nav ">
                     <button class="prev ">
-                        <img src="../media/left-arrow.png ">
+                        <img src="media/left-arrow.png ">
                     </button>
                     <button class="next ">
-                        <img src="../media/right-arrow.png ">
+                        <img src="media/right-arrow.png ">
                     </button>
 
                 </div>
             </div>
             <div id='contact-anchor' class="d-flex justify-content-end mr-5 mb-3 ">
-                <span style="color:white; font-family: 'Poppins', sans-serif;letter-spacing: 0.05em; "><img style="height:1.5rem; " src='../media/directory-arrow.png'><a style='color:white'> See Work Portfolio</a></span>
+                <span style="color:white; font-family: 'Poppins', sans-serif;letter-spacing: 0.05em; "><img style="height:1.5rem; " src='media/directory-arrow.png'><a style='color:white'> See Work Portfolio</a></span>
 
             </div>
         </div>
     </div>
+    <!-- Contact Information Section -->
     <div class='row w-100 mx-auto' style="padding:2rem 4rem; background-color: rgba(30,30,35,.075); ">
         <div class="row w-100 d-flex align-items-center justify-content-between ">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 d-flex ">
                 <div class="col-6 d-flex justify-content-end ">
-                    <img class='contact-us-img' src="../media/contact-us-phone.png ">
+                    <img class='contact-us-img' src="media/contact-us-phone.png ">
                 </div>
                 <div class="col-6 d-flex align-items-center ">
                     <span>
@@ -337,7 +355,7 @@
             </div>
             <div class="contact-info-tab col-xl-4 col-lg-4 col-md-4 col-sm-6 ">
                 <div class="col-6 d-flex justify-content-end ">
-                    <img class='contact-us-img' src="../media/contact-us-email.png ">
+                    <img class='contact-us-img' src="media/contact-us-email.png ">
                 </div>
                 <div class="col-6 d-flex align-items-center ">
                     <span>
@@ -348,7 +366,7 @@
             </div>
             <div class="contact-address col-xl-4 col-lg-4 col-md-4 col-sm-6 d-flex ">
                 <div class="col-6 d-flex justify-content-end ">
-                    <img class='contact-us-img' src="../media/contact-us-address.png ">
+                    <img class='contact-us-img' src="media/contact-us-address.png ">
                 </div>
                 <div class="col-6 d-flex align-items-center ">
                     <span>
@@ -359,10 +377,11 @@
             </div>
         </div>
     </div>
+    <!-- Contact Us Form -->
     <div id="contact-anchor "></div>
     <div class="w-100 mx-auto d-flex mt-5 " style="padding: 0 5%; ">
         <div class="d-none d-xl-block d-lg-block col-xl-5 col-lg-5 ">
-            <img class='w-100' src="../media/contact_us2.jpg ">
+            <img class='w-100' src="media/contact_us2.jpg ">
         </div>
         <div id="contact-us " class="col-xl-8 col-lg-8 col-12 mt-3 " style="background:white ">
             <div class="row w-100 pt-2 d-flex align-items-center " style="padding-left: 50px; padding-right: 48px; font-weight:300; font-size:2.2rem ">
@@ -399,33 +418,36 @@
             </div>
         </div>
     </div>
+    <!-- Footer on web screen sizes -->
     <div id='web-footer' class="row w-100 mx-auto mt-5 d-flex justify-content-end align-items-center " style='background-color:#1E1E23;'>
         <div class='row py-3 mr-4' style='color:white; font-size:13px'>
             Copyright © 2022 Xtra Weld. All Rights Reserved.
         </div>
     </div>
+    <!-- Footer on mobile screen sizes -->
     <div class="mobile-footer">
         <div class="container d-flex align-items-end ">
             <div class="footer-option ">
                 <a href="#portfolio-anchor">
-                    <img class='footer-icon' src='../media/portfolio.png'>Portfolio
+                    <img class='footer-icon' src='media/portfolio.png'>Portfolio
                 </a>
             </div>
             <div class="footer-option ">
                 <a href="#services-anchor">
-                    <img class='footer-icon' src='../media/services.png'>Services
+                    <img class='footer-icon' src='media/services.png'>Services
                 </a>
             </div>
             <div class="footer-option ">
                 <a href="#contact-anchor">
-                    <img class='footer-icon' src='../media/phone2.png'>Contact Us
+                    <img class='footer-icon' src='media/phone2.png'>Contact Us
                 </a>
             </div>
         </div>
     </div>
-    <script src="../script.js " defer></script>
+    <script src="script.js" defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+    <!-- Script for sending contact form to email -->
     <script type="text/javascript">
         (function() {
             emailjs.init("GQulfv-Kz5yEKKxcI");

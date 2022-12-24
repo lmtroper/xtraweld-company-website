@@ -8,8 +8,8 @@ window.addEventListener("resize", () => {
 });
 
 
-const primaryNav = document.querySelector(".mobile-navigation")
-const navToggle = document.querySelector(".mobile-nav-toggle")
+const primaryNav = document.querySelector(".navigation-links")
+const navToggle = document.querySelector(".nav-toggle")
 
 navToggle.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible');
@@ -148,6 +148,7 @@ function sendEmail() {
         email: document.getElementById('email-input ').value,
         message: document.getElementById('message-input ').value,
     }
+
     const serviceId = "service_ayawkcj";
     const templateId = "template_a83f8rt"
 
