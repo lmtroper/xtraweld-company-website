@@ -31,6 +31,8 @@ document.getElementById('mobile-header-title').innerHTML = 'WELDING SERVICES\nIN
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
 
+const cardWidth = document.querySelector('.card-container').offsetWidth;
+
 const track = document.querySelector('.track')
 let carouselWidth = document.querySelector('.carousel-container').offsetWidth;
 
@@ -43,9 +45,9 @@ let index = 0;
 next.addEventListener('click', () => {
     index++;
     prev.classList.add('show');
-    track.style.transform = `translateX(-${index*carouselWidth}px)`;
+    track.style.transform = `translateX(-${index*cardWidth}px)`;
 
-    if (track.offsetWidth - (index * carouselWidth) < carouselWidth) {
+    if (track.offsetWidth - (index * cardWidth) < carouselWidth) {
         next.classList.add('hide');
     }
 })
@@ -57,7 +59,7 @@ prev.addEventListener('click', () => {
     if (index === 0) {
         prev.classList.remove('show');
     }
-    track.style.transform = `translateX(-${index*carouselWidth}px)`;
+    track.style.transform = `translateX(-${index*cardWidth}px)`;
 
 })
 
@@ -139,3 +141,24 @@ document.querySelectorAll('.accordion__button').forEach(button => {
         };
     })
 })
+
+function sendEmail() {
+    var params = {
+        name: document.getElementById('name-input ').value,
+        email: document.getElementById('email-input ').value,
+        message: document.getElementById('message-input ').value,
+    }
+    const serviceId = "service_ayawkcj";
+    const templateId = "template_a83f8rt"
+
+    emailjs.send(serviceId, templateId, params).then(
+        res => {
+            document.getElementById('name-input ').value = "";
+            document.getElementById('email-input ').value = "";
+            document.getElementById('message-input ').value = "";
+            console.log(res);
+            alert("Your message was sent successfully")
+        }
+    );
+
+}

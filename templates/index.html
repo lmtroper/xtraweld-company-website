@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
     <!-- <meta http-equiv="refresh" content="delay_time; URL=new_website_url" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href='style.css' />
@@ -17,11 +17,11 @@
 
 <body>
     <div class="container-fluid w-100 mx-auto d-flex justify-content-end align-items-center" style="background: #1E1E23; color:white; height:50px;">
-        <div class="mx-3">
-            <img class='my-2 pl-3 pr-2' style='height:25px;' src="../media/phone-icon.png"> 416-XXX-XXXX
+        <div class="header-phone-number mx-3">
+            <img class='my-2 pl-3 pr-2' style='height:25px;' src="../media/phone-icon.png"><span class="header-phone-number">416-XXX-XXXX</span>
         </div>
-        <div class="mx-3">
-            <img class='my-2 pl-3 pr-2' style='height:25px;' src="../media/mail-icon.png"> xtraweld@gmail.com
+        <div class="header-email mx-3">
+            <img class='my-2 pl-3 pr-2' style='height:25px;' src="../media/mail-icon.png"> <span>xtraweld@gmail.com</span>
         </div>
     </div>
     <header class="mobile-header">
@@ -39,13 +39,16 @@
                     <a href="#">Home</a>
                 </li>
                 <li class="active">
-                    <a href="#">About</a>
+                    <a href="#about-us-anchor">About</a>
                 </li>
                 <li class="active">
-                    <a href="#">Work</a>
+                    <a href="#services-anchor">Services</a>
                 </li>
                 <li class="active">
-                    <a href="../templates/contact-us.html">Contact</a>
+                    <a href="#portfolio-anchor">Portfolio</a>
+                </li>
+                <li class="active">
+                    <a href="#contact-anchor">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -63,11 +66,13 @@
                 </h5>
             </div>
             <div class="header-button-group">
-                <button id="services-btn" class='btn mr-3 px-5 py-2' onclick='window.location.href="#contact-us"'>OUR SERVICES</button>
-                <button id="contact-btn" class='btn ml-3 px-5 py-2'>CONTACT US</button>
+                <button id="services-btn" class='btn mr-3 px-5 py-2' onclick='window.location.href="#services-anchor"'>OUR SERVICES</button>
+                <button id="contact-btn" class='btn ml-3 px-5 py-2' onclick='window.location.href="#contact-anchor"'>CONTACT US</button>
             </div>
+            <a id="about-us-anchor"></a>
         </div>
     </div>
+    <a id="about-us-anchor"></a>
     <div class="row my-5 mx-5">
         <div class="col d-none d-lg-block d-xl-block">
             <img class='w-100' src="../media/contact_us4.jpg">
@@ -114,19 +119,20 @@
 
             <div class="col-xl-5 col-lg-4 col-12 col-sm-12 pt-4 d-flex align-items-center" style="font-weight:300; font-size:2.2rem">
                 <div class="row d-flex align-items-center">
-                    <span style="border-top: 5px solid rgb(255, 190, 69);width: 55px;margin-right:2%; border-radius: 5px;"></span>
-
-                    <span>Professional Certifications</span>
+                    <div class="d-grid">
+                        <span>Professional Certifications</span>
+                        <span style="border-top: 3px solid rgb(255, 190, 69);width: 40%;margin-right:2%; border-radius: 5px;"></span>
+                    </div>
                     <p style="padding-top:30px; font-size:10.5pt; color:#1E1E23;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ac incididunt ut sut labore et dolore magna it aliqua. Urna id volutpat lacus laoreet non essit ad curabitur. Pellentesque diam volutpat commodo sed.</p>
 
                 </div>
 
             </div>
-            <div class="cert-card col-xl-3 col-lg-3 col-7 d-grid " style="background-color:white; box-shadow: -6px 6px 23px -4px rgb(0 0 0 / 28%);">
+            <div class="cert-card col-xl-3 col-lg-3 col-md-7 col-sm-8 col-10 d-grid " style="background-color:white; box-shadow: -6px 6px 23px -4px rgb(0 0 0 / 28%);">
                 <div class="row pt-4 d-flex justify-content-center">
                     <img class='certification' src="../media/TSSA-logo.png">
                 </div>
-                <div class="row pt-3 d-flex justify-content-center" style="text-align:center">
+                <div class="row pt-3 px-2 d-flex justify-content-center" style="text-align:center">
                     Technical Standards & Safety Authority
                 </div>
                 <div class="pt-3">
@@ -146,7 +152,7 @@
                     <a href="">Learn more...</a>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-7 d-grid" style="background-color:white;box-shadow: -6px 6px 23px -4px rgb(0 0 0 / 28%);">
+            <div class="col-xl-3 col-lg-3 col-md-7 col-sm-8 col-10 d-grid" style="background-color:white;box-shadow: -6px 6px 23px -4px rgb(0 0 0 / 28%);">
                 <div class="row pt-4 d-flex justify-content-center">
                     <img class='certification' src="../media/cwb-logo.png">
                 </div>
@@ -166,6 +172,7 @@
                         </li>
                     </ul>
                 </div>
+                <a id="services-anchor"></a>
                 <div class="learn-more-link pb-3">
                     <a href="">Learn more...</a>
                 </div>
@@ -173,7 +180,7 @@
 
         </div>
     </div>
-    <div id='services-div' class='row mt-3 d-flex px-3 pb-5'>
+    <div id='services-div' class='row d-flex px-3 pt-3 pb-5'>
         <div class='subheader' style="display:grid!important">
             <div class='d-flex justify-content-center' style="color:white; margin: 4;font-size:2rem!important;">Offered Services</div>
             <div class="pt-1 d-flex justify-content-center">
@@ -256,13 +263,13 @@
                 </div>
             </div>
         </div>
+        <a id="portfolio-anchor"></a>
     </div>
-
     <div id='portfolio-header' class="row d-flex mt-4">
         <div class="col-xl-5 col-lg-4 col-12 col-sm-12 pt-4 d-flex align-items-center" style="padding-left: 96px; padding-right: 48px; font-weight:300; font-size:2.2rem">
             <div class="row d-grid align-items-center">
-                <span style="color:white; font-size:1.5em;font-family: 'Poppins', sans-serif; " ">Our Work</span>
-                <span style="border-top:6px rgb(246, 181, 19) solid; width:35%; "></span>
+                <span style="color:white; font-size:1.5em;font-family: 'Poppins', sans-serif; ">Our Work</span>
+                <span style="border-top:3px rgb(246, 181, 19) solid; width:35%;border-radius: 5px; "></span>
             </div>
         </div>
         <div class="col-xl-7 col-lg-8 col-12 ">
@@ -311,8 +318,8 @@
 
                 </div>
             </div>
-            <div class="d-flex justify-content-end mr-5 mb-3 ">
-                <span style="color:white; font-family: 'Poppins', sans-serif;letter-spacing: 0.05em; "><img style="height:1.5rem; " src='../media/directory-arrow.png'><a style='color:white' href="../templates/contact-us.html "> See Work Portfolio</a></span>
+            <div id='contact-anchor' class="d-flex justify-content-end mr-5 mb-3 ">
+                <span style="color:white; font-family: 'Poppins', sans-serif;letter-spacing: 0.05em; "><img style="height:1.5rem; " src='../media/directory-arrow.png'><a style='color:white'> See Work Portfolio</a></span>
 
             </div>
         </div>
@@ -353,27 +360,18 @@
             </div>
         </div>
     </div>
+    <div id="contact-anchor "></div>
     <div class="d-flex mt-5 " style="padding: 0 5%; ">
         <div class="d-none d-xl-block d-lg-block col-xl-5 col-lg-5 ">
             <img class='w-100' src="../media/contact_us2.jpg ">
         </div>
         <div id="contact-us " class="col-xl-8 col-lg-8 col-12 mt-3 " style="background:white ">
             <div class="row w-100 pt-2 d-flex align-items-center " style="padding-left: 50px; padding-right: 48px; font-weight:300; font-size:2.2rem ">
-                <span style="border-top: 5px solid rgb(255, 190, 69);width: 5%;margin-right:2%; border-radius: 5px; "></span>
+                <span style="border-top: 5px solid rgb(255, 190, 69);width: 10%;margin-right:2%; border-radius: 5px; "></span>
                 <div>Contact Us</div>
             </div>
-            <!-- <div class=" contact-us d-flex ">
-                <div style='display:grid'>
-                    <img class='contact-us-phone' style="padding-left: 6px; padding-bottom: 4pt; " src="../media/phone-icon.png ">
-                    <img class='contact-us-email' src="../media/mail-icon.png ">
-                </div>
-                <div style='display:grid'>
-                    <span style="padding-bottom: 4pt; "><b>Phone:</b> <a id="phone-link " href="# ">416-XXX-XXXX</a></span>
-                    <span><b>Email:</b> <a id="email-link " href="# ">xtraweld@gmail.com</a></span>
-                </div>
-            </div> -->
             <div class="w-75 contact-us pb-3 pl-3 pr-3 mt-3 mb-4 " style="border-left:rgb(246, 181, 19) solid 3px; background:rgba(30,30,35,.075) ">
-                <span >Thank you for your interest in Xtra Weld services. You can contact us via email or by completing the form below.</span>
+                <span>Thank you for your interest in Xtra Weld services. You can contact us via email or by completing the form below.</span>
             </div>
             <div class="input-group pt-2 pb-3 contact-us ">
                 <form class="w-75 ">
@@ -395,9 +393,9 @@
                     </div>
                     <div class="form-group ">
                         <label class="required " for="message-input ">Message</label>
-                        <textarea class="form-control " id="message-input " rows="5 " required></textarea>
+                        <textarea class="form-control " id="message-input " rows="5 " placeholder='How can we help you?' required></textarea>
                     </div>
-                    <button type="submit " class="btn btn-primary " style="background-color:rgb(246, 181, 19)!important; border:white; ">Send Message</button>
+                    <button type="submit " class="btn btn-primary " onclick="sendEmail()" style="background-color:rgb(246, 181, 19)!important; border:white; ">Send Message</button>
                 </form>
             </div>
         </div>
@@ -407,26 +405,33 @@
             Copyright © 2022 Xtra Weld. All Rights Reserved.
         </div>
     </div>
-    <!-- <footer class="mobile-footer d-flex ">
+    <div class="mobile-footer ">
         <div class="container d-flex align-items-end ">
             <div class="footer-option ">
-                <a href="# ">
+                <a href="#portfolio-anchor">
                     <img class='footer-icon' src='../media/portfolio.png'>Portfolio
                 </a>
             </div>
             <div class="footer-option ">
-                <a href="# ">
+                <a href="#services-anchor">
                     <img class='footer-icon' src='../media/services.png'>Services
                 </a>
             </div>
             <div class="footer-option ">
-                <a href="# ">
+                <a href="#contact-anchor">
                     <img class='footer-icon' src='../media/phone2.png'>Contact Us
                 </a>
             </div>
         </div>
-    </footer> -->
+    </div>
+    <script src="../script.js " defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("GQulfv-Kz5yEKKxcI");
+        })();
+    </script>
 </body>
-<script src="../script.js " defer></script>
 
 </html>
