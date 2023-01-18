@@ -1,3 +1,19 @@
+// Scroll Animation
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            console.log('true!')
+            entry.target.classList.add('show')
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+// Navbar
 let resizeTimer;
 window.addEventListener("resize", () => {
     document.body.classList.add("resize-animation-stopper");
@@ -24,10 +40,10 @@ navToggle.addEventListener('click', () => {
 
 })
 
-document.getElementById('mobile-header-title').innerHTML = 'WELDING SERVICES\nIN THE GTA <br><button id="services-btn" class="btn px-3 py-2">OUR SERVICES</button><button id="contact-btn" class="btn px-3 py-2">CONTACT US</button>';
+document.getElementById('mobile-header-title').innerHTML = 'WELDING SERVICES\nIN THE GTA <br><button onclick=window.location.href="#services-anchor" id="services-btn" class="btn px-3 py-2">OUR SERVICES</button><button id="contact-btn" class="btn px-3 py-2" onclick=window.location.href="#contact-anchor">CONTACT US</button>';
 
 
-//CAROUSEL
+// Carousel
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
 
@@ -68,7 +84,6 @@ prev.addEventListener('click', () => {
 // SERVICES SECTION: ACCORDION RESPONSIVENESS
 
 var windowSize = true; //value is true when window > 992px
-console.log('initial size:', windowSize)
 
 window.addEventListener('load', function() {
     if (this.window.innerWidth < 992) {
