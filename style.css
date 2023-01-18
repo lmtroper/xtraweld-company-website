@@ -634,7 +634,9 @@ img.certification {
 }
 
 .service-img {
-    background-size: contain !important;
+    background-size: cover !important;
+    /* background-size: auto; */
+    background-repeat: no-repeat !important;
 }
 
 .portfolio-title span:nth-child(1) {
