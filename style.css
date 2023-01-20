@@ -291,6 +291,7 @@ button span:after {
     top: 0;
     right: -20px;
     transition: 0.5s;
+    display: none;
 }
 
 button:hover span {
@@ -635,7 +636,6 @@ img.certification {
 
 .service-img {
     background-size: cover !important;
-    /* background-size: auto; */
     background-repeat: no-repeat !important;
 }
 
