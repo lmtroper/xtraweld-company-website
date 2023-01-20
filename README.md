@@ -4,13 +4,17 @@ Designed and developed a responsive website template specifically tailored for a
 
 **See the website here:** https://www.xtraweld.ca/
 
-**Website Demo on Chrome Web Broswer:**
+### Website Demo on Chrome Web Broswer:
 
-[XTRA WELD.webm](https://user-images.githubusercontent.com/72565412/213820557-6f5ddc96-c9ca-48ab-a232-a0e79addbd5e.webm)
-
-
-**Website Demo on Mobile (Iphone 11):**
+[Xtra_Weld_Web_Demo.webm](https://user-images.githubusercontent.com/72565412/213821873-ac82c1a5-9229-426d-afac-758789c99f61.webm)
 
 
-https://user-images.githubusercontent.com/72565412/213821669-73407756-c0f3-4935-ab0f-a26a3a824c5b.mov
+### Website Demo on Mobile (Iphone 11):
+
+
+
+https://user-images.githubusercontent.com/72565412/213821845-31533cff-f39d-4888-b198-d0323028bbc0.mov
+
+
+
 
