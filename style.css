@@ -83,7 +83,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
     min-height: min(720px, calc(100vh - 38px));
     padding: 90px 9vw;
     color: white;
-    background: linear-gradient(90deg, rgba(10,12,14,.9) 0%, rgba(10,12,14,.52) 48%, rgba(10,12,14,.08) 100%), url('media/background.jpg') center/cover;
+    background: linear-gradient(90deg, rgba(10,12,14,.9) 0%, rgba(10,12,14,.52) 48%, rgba(10,12,14,.08) 100%), url('/media/background.jpg') center/cover;
     isolation: isolate;
 }
 .primary-header-title { max-width: 730px; }
@@ -187,7 +187,7 @@ img.checkmark { width: 17px; height: 17px; margin: 0; }
 .work-item img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; background: #17191c; }
 .work-item figcaption { padding: 11px 2px 0; color: rgba(255,255,255,.7); font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
 
-#portfolio-section { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; min-height: 560px; padding: 90px 5vw; margin: 0; background: linear-gradient(90deg, rgba(23,25,28,.96), rgba(23,25,28,.62)), url('media/weld-bg.jpeg') center/cover; }
+#portfolio-section { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; min-height: 560px; padding: 90px 5vw; margin: 0; background: linear-gradient(90deg, rgba(23,25,28,.96), rgba(23,25,28,.62)), url('/media/weld-bg.jpeg') center/cover; }
 .portfolio-title { padding: 0; }
 .portfolio-title > div { width: auto; margin: 0; }
 .portfolio-title span:first-child { display: block; color: white; font-family: var(--display); font-size: clamp(3.5rem, 6vw, 6rem); line-height: .88; }
